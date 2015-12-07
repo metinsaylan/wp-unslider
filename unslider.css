@@ -1,0 +1,43 @@
+/* Clearfix */
+.dots:after { clear: both; }
+.dots:before, .dots:after { display: table; content: ""; }
+
+/* Container & Basics */
+.wp-unslider-container {  }
+.wp-unslider { position: relative; min-height: 150px; padding: 0px; }
+    .wp-unslider li { list-style: none; }
+        .wp-unslider ul li { float: left; }
+		
+/* Dots */
+.wp-unslider ol.dots {
+list-style: none;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 20px;
+width: 100%;
+text-align: center;
+}
+	.wp-unslider .dots li{ 
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 4px;
+		
+		text-indent: -999em;
+		
+		border: 2px solid #fff;
+		border-radius: 6px;
+		
+		cursor: pointer;
+		opacity: .4;
+		
+		-webkit-transition: background .5s, opacity .5s;
+		-moz-transition: background .5s, opacity .5s;
+		transition: background .5s, opacity .5s;
+	}
+	
+	.wp-unslider .dots li.active{ 
+		background: #fff;
+		opacity: 1; 
+	}
